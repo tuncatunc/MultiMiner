@@ -434,8 +434,8 @@
             // perksCheckBox
             // 
             this.perksCheckBox.AutoSize = true;
-            this.perksCheckBox.Checked = true;
-            this.perksCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.perksCheckBox.Checked = false;
+            this.perksCheckBox.CheckState = System.Windows.Forms.CheckState.Unchecked;
             this.perksCheckBox.Location = new System.Drawing.Point(96, 74);
             this.perksCheckBox.Name = "perksCheckBox";
             this.perksCheckBox.Size = new System.Drawing.Size(192, 19);

@@ -424,6 +424,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MultiMiner.ico" />
+    <Resource Include="Resources\miner.png" />
     <None Include="Resources\insert_chart.png" />
     <None Include="Resources\home.png" />
     <None Include="Resources\activity_monitor.png" />

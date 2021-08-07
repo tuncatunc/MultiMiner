@@ -1143,6 +1143,20 @@ namespace MultiMiner.Win.Forms
         private void MainForm_Load(object sender, EventArgs e)
         {
             SetupApplication();
+            StartInBriefMode();
+            StartInDetailedView();
+        }
+
+        private void StartInDetailedView()
+        {
+            SetListViewStyle(View.Details);
+        }
+
+        private void StartInBriefMode()
+        {
+            // Start in brief mode
+            SetBriefMode(true, true);
+            RefreshDetailsToggleButton();
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -1776,7 +1790,9 @@ namespace MultiMiner.Win.Forms
 
         private void notificationsControl1_NotificationsChanged(object sender)
         {
-            notificationsControl.Visible = notificationsControl.NotificationCount() > 0;
+            // tunca, Disable notifications
+            // notificationsControl.Visible = notificationsControl.NotificationCount() > 0;
+            notificationsControl.Visible = false;
             if (notificationsControl.Visible)
                 notificationsControl.BringToFront();
         }
