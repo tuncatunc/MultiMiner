@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MultiMiner.Xgminer</RootNamespace>
-    <AssemblyName>MultiMiner.Xgminer</AssemblyName>
+    <AssemblyName>Miner.Xgminer</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
@@ -67,9 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MultiMiner.Utility\MultiMiner.Utility.csproj">
+    <ProjectReference Include="..\MultiMiner.Utility\Miner.Utility.csproj">
       <Project>{99B0F266-EFF7-4416-8C36-8356396A11CA}</Project>
-      <Name>MultiMiner.Utility</Name>
+      <Name>Miner.Utility</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

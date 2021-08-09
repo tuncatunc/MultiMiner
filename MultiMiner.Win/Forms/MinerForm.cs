@@ -1143,8 +1143,8 @@ namespace MultiMiner.Win.Forms
         private void MainForm_Load(object sender, EventArgs e)
         {
             SetupApplication();
-            StartInBriefMode();
-            StartInDetailedView();
+            // StartInBriefMode();
+            // StartInDetailedView();
         }
 
         private void StartInDetailedView()

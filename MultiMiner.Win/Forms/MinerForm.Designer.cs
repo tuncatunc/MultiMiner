@@ -520,7 +520,7 @@
             this.advancedAreaContainer.Panel2.Controls.Add(this.advancedTabControl);
             this.advancedAreaContainer.Panel2.Controls.Add(this.panel2);
             this.advancedAreaContainer.Size = new System.Drawing.Size(1259, 396);
-            this.advancedAreaContainer.SplitterDistance = 192;
+            this.advancedAreaContainer.SplitterDistance = 191;
             this.advancedAreaContainer.SplitterWidth = 8;
             this.advancedAreaContainer.TabIndex = 10;
             // 
@@ -535,7 +535,7 @@
             // instancesContainer.Panel2
             // 
             this.instancesContainer.Panel2.Controls.Add(this.detailsAreaContainer);
-            this.instancesContainer.Size = new System.Drawing.Size(1259, 192);
+            this.instancesContainer.Size = new System.Drawing.Size(1259, 191);
             this.instancesContainer.SplitterDistance = 186;
             this.instancesContainer.SplitterWidth = 6;
             this.instancesContainer.TabIndex = 4;
@@ -555,7 +555,7 @@
             // detailsAreaContainer.Panel2
             // 
             this.detailsAreaContainer.Panel2.Controls.Add(this.detailsControl1);
-            this.detailsAreaContainer.Size = new System.Drawing.Size(1259, 192);
+            this.detailsAreaContainer.Size = new System.Drawing.Size(1259, 191);
             this.detailsAreaContainer.SplitterDistance = 1043;
             this.detailsAreaContainer.TabIndex = 3;
             // 
@@ -608,7 +608,7 @@
             this.deviceListView.Location = new System.Drawing.Point(0, 0);
             this.deviceListView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.deviceListView.Name = "deviceListView";
-            this.deviceListView.Size = new System.Drawing.Size(1043, 192);
+            this.deviceListView.Size = new System.Drawing.Size(1043, 191);
             this.deviceListView.SmallImageList = this.smallImageList;
             this.deviceListView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.deviceListView.TabIndex = 2;
@@ -737,7 +737,7 @@
             this.detailsControl1.Location = new System.Drawing.Point(0, 0);
             this.detailsControl1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.detailsControl1.Name = "detailsControl1";
-            this.detailsControl1.Size = new System.Drawing.Size(212, 192);
+            this.detailsControl1.Size = new System.Drawing.Size(212, 191);
             this.detailsControl1.TabIndex = 0;
             this.detailsControl1.CloseClicked += new MultiMiner.Win.Controls.DetailsControl.CloseClickedHandler(this.detailsControl1_CloseClicked);
             // 
@@ -752,7 +752,7 @@
             this.advancedTabControl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.advancedTabControl.Name = "advancedTabControl";
             this.advancedTabControl.SelectedIndex = 0;
-            this.advancedTabControl.Size = new System.Drawing.Size(1259, 153);
+            this.advancedTabControl.Size = new System.Drawing.Size(1259, 154);
             this.advancedTabControl.TabIndex = 15;
             this.advancedTabControl.SelectedIndexChanged += new System.EventHandler(this.advancedTabControl_SelectedIndexChanged);
             // 
@@ -764,7 +764,7 @@
             this.historyPage.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.historyPage.Name = "historyPage";
             this.historyPage.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.historyPage.Size = new System.Drawing.Size(1251, 115);
+            this.historyPage.Size = new System.Drawing.Size(1251, 116);
             this.historyPage.TabIndex = 2;
             this.historyPage.Text = "History";
             this.historyPage.UseVisualStyleBackColor = true;
@@ -800,7 +800,7 @@
             this.historyGridView.ReadOnly = true;
             this.historyGridView.RowHeadersVisible = false;
             this.historyGridView.RowHeadersWidth = 62;
-            this.historyGridView.Size = new System.Drawing.Size(1239, 99);
+            this.historyGridView.Size = new System.Drawing.Size(1239, 100);
             this.historyGridView.TabIndex = 0;
             this.historyGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.historyGridView_CellFormatting);
             this.historyGridView.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.historyGridView_RowsAdded);
@@ -907,7 +907,7 @@
             this.processLogPage.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.processLogPage.Name = "processLogPage";
             this.processLogPage.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.processLogPage.Size = new System.Drawing.Size(1251, 115);
+            this.processLogPage.Size = new System.Drawing.Size(1251, 112);
             this.processLogPage.TabIndex = 1;
             this.processLogPage.Text = "Process Log";
             this.processLogPage.UseVisualStyleBackColor = true;
@@ -938,7 +938,7 @@
             this.processLogGridView.ReadOnly = true;
             this.processLogGridView.RowHeadersVisible = false;
             this.processLogGridView.RowHeadersWidth = 62;
-            this.processLogGridView.Size = new System.Drawing.Size(1239, 99);
+            this.processLogGridView.Size = new System.Drawing.Size(1239, 96);
             this.processLogGridView.TabIndex = 14;
             this.processLogGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.processLogGridView_CellFormatting);
             this.processLogGridView.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.processLogGridView_CellMouseDown);
@@ -1001,7 +1001,7 @@
             this.apiMonitorPage.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.apiMonitorPage.Name = "apiMonitorPage";
             this.apiMonitorPage.Padding = new System.Windows.Forms.Padding(6, 8, 6, 8);
-            this.apiMonitorPage.Size = new System.Drawing.Size(1251, 115);
+            this.apiMonitorPage.Size = new System.Drawing.Size(1251, 112);
             this.apiMonitorPage.TabIndex = 0;
             this.apiMonitorPage.Text = "API Monitor";
             this.apiMonitorPage.UseVisualStyleBackColor = true;
@@ -1032,7 +1032,7 @@
             this.apiLogGridView.Name = "apiLogGridView";
             this.apiLogGridView.RowHeadersVisible = false;
             this.apiLogGridView.RowHeadersWidth = 62;
-            this.apiLogGridView.Size = new System.Drawing.Size(1239, 99);
+            this.apiLogGridView.Size = new System.Drawing.Size(1239, 96);
             this.apiLogGridView.TabIndex = 13;
             this.apiLogGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.apiLogGridView_CellFormatting);
             // 
@@ -1216,7 +1216,6 @@
             this.detailsToggleButton.Name = "detailsToggleButton";
             this.detailsToggleButton.Size = new System.Drawing.Size(139, 29);
             this.detailsToggleButton.Text = "▾ Fewer details";
-            this.detailsToggleButton.Visible = false;
             this.detailsToggleButton.Click += new System.EventHandler(this.detailsToggleButton_ButtonClick);
             // 
             // strategiesLabel
@@ -1231,7 +1230,7 @@
             // 
             this.strategyCountdownLabel.AutoSize = false;
             this.strategyCountdownLabel.Name = "strategyCountdownLabel";
-            this.strategyCountdownLabel.Size = new System.Drawing.Size(41, 25);
+            this.strategyCountdownLabel.Size = new System.Drawing.Size(1, 25);
             this.strategyCountdownLabel.Text = "Time until strategy check: 60s";
             this.strategyCountdownLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -1239,7 +1238,7 @@
             // 
             this.hashRateStatusLabel.AutoSize = false;
             this.hashRateStatusLabel.Name = "hashRateStatusLabel";
-            this.hashRateStatusLabel.Size = new System.Drawing.Size(989, 25);
+            this.hashRateStatusLabel.Size = new System.Drawing.Size(970, 25);
             this.hashRateStatusLabel.Spring = true;
             this.hashRateStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 

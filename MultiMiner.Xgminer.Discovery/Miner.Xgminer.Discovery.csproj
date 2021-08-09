@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4409DA1A-D1C3-4AE9-9AAC-D87C2F84AAA8}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>MultiMiner.PoolChecker</RootNamespace>
-    <AssemblyName>MultiMiner.PoolChecker</AssemblyName>
+    <ProjectGuid>{ED66CAA1-4826-46E9-BB23-C56D0CFF5C7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MultiMiner.Xgminer.Discovery</RootNamespace>
+    <AssemblyName>Miner.Xgminer.Discovery</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -25,7 +27,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -39,26 +40,29 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="MinerFinder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MultiMiner.Engine\MultiMiner.Engine.csproj">
-      <Project>{845687bb-ec47-46d3-ac9d-6fcfb63de8f5}</Project>
-      <Name>MultiMiner.Engine</Name>
+    <ProjectReference Include="..\MultiMiner.Utility\Miner.Utility.csproj">
+      <Project>{99B0F266-EFF7-4416-8C36-8356396A11CA}</Project>
+      <Name>Miner.Utility</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MultiMiner.Xgminer\MultiMiner.Xgminer.csproj">
-      <Project>{0DBEF993-1B34-4D80-AB6A-F662604325DC}</Project>
-      <Name>MultiMiner.Xgminer</Name>
+    <ProjectReference Include="..\MultiMiner.Xgminer.Api\Miner.Xgminer.Api.csproj">
+      <Project>{5B43AD9D-8B67-4AA8-B76D-AA83CAF9D29F}</Project>
+      <Name>Miner.Xgminer.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

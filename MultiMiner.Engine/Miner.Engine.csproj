@@ -1,18 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6B967BB0-692A-4AD5-99EE-93C054F05792}</ProjectGuid>
+    <ProjectGuid>{845687BB-EC47-46D3-AC9D-6FCFB63DE8F5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MultiMiner.WhatToMine</RootNamespace>
-    <AssemblyName>MultiMiner.WhatToMine</AssemblyName>
+    <RootNamespace>MultiMiner.Engine</RootNamespace>
+    <AssemblyName>Miner.Engine</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,29 +42,57 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiContext.cs" />
-    <Compile Include="Data\ApiResponse.cs" />
-    <Compile Include="Extensions\CoinInformationExtensions.cs" />
+    <Compile Include="ApplicationPaths.cs" />
+    <Compile Include="CoinSuggestions.cs" />
+    <Compile Include="Data\AlgorithmParameter.cs" />
+    <Compile Include="Data\CoinSuggestionsAlgorithm.cs" />
+    <Compile Include="Data\Configuration\Coin.cs" />
+    <Compile Include="Data\Configuration\ListViewStyle.cs" />
+    <Compile Include="Data\Configuration\Strategy.cs" />
+    <Compile Include="Data\PoolGroup.cs" />
+    <Compile Include="Data\Configuration\Device.cs" />
+    <Compile Include="Data\Configuration\Engine.cs" />
+    <Compile Include="Data\Configuration\Xgminer.cs" />
+    <Compile Include="Data\KnownCoins.cs" />
+    <Compile Include="Data\MinerNames.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Helpers\DonationPools.cs" />
+    <Compile Include="Helpers\Fingerprint.cs" />
+    <Compile Include="Installers\MultiMinerInstaller.cs" />
+    <Compile Include="Data\AvailableMiner.cs" />
+    <Compile Include="Installers\AvailableMiners.cs" />
+    <Compile Include="Installers\MinerInstaller.cs" />
+    <Compile Include="LogProcessCloseArgs.cs" />
+    <Compile Include="Data\MinerDescriptor.cs" />
+    <Compile Include="MinerFactory.cs" />
+    <Compile Include="MinerPath.cs" />
+    <Compile Include="MinerProcess.cs" />
+    <Compile Include="MiningEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MultiMiner.CoinApi\MultiMiner.CoinApi.csproj">
-      <Project>{9e86f77a-68b9-4d72-82d2-855878ba8cb1}</Project>
-      <Name>MultiMiner.CoinApi</Name>
+    <ProjectReference Include="..\MultiMiner.CoinApi\Miner.CoinApi.csproj">
+      <Project>{9E86F77A-68B9-4D72-82D2-855878BA8CB1}</Project>
+      <Name>Miner.CoinApi</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MultiMiner.Utility\MultiMiner.Utility.csproj">
-      <Project>{99b0f266-eff7-4416-8c36-8356396a11ca}</Project>
-      <Name>MultiMiner.Utility</Name>
+    <ProjectReference Include="..\MultiMiner.Utility\Miner.Utility.csproj">
+      <Project>{99B0F266-EFF7-4416-8C36-8356396A11CA}</Project>
+      <Name>Miner.Utility</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MultiMiner.Xgminer\MultiMiner.Xgminer.csproj">
-      <Project>{0dbef993-1b34-4d80-ab6a-f662604325dc}</Project>
-      <Name>MultiMiner.Xgminer</Name>
+    <ProjectReference Include="..\MultiMiner.Xgminer.Api\Miner.Xgminer.Api.csproj">
+      <Project>{5B43AD9D-8B67-4AA8-B76D-AA83CAF9D29F}</Project>
+      <Name>Miner.Xgminer.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MultiMiner.Xgminer\Miner.Xgminer.csproj">
+      <Project>{0DBEF993-1B34-4D80-AB6A-F662604325DC}</Project>
+      <Name>Miner.Xgminer</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
